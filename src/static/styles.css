@@ -57,6 +57,42 @@ section h3 {
   color: #1a237e;
 }
 
+#activity-controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.control-group label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #1a237e;
+}
+
+.control-group input,
+.control-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+@media (min-width: 640px) {
+  #activity-controls {
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: end;
+  }
+}
+
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
@@ -68,6 +104,20 @@ section h3 {
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+}
+
+.activity-meta {
+  margin-bottom: 8px;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1a237e;
+  background-color: #e8eaf6;
 }
 
 .activity-card p {
